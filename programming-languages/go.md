@@ -31,3 +31,14 @@
 - params and types: `func funcName(param1 type, param2 type)`
 - return types: `func funcName() (return_variable_1 type, return_var_2 type )`
 - `func main()` is the starting point.
+
+# Hello World:
+
+```go
+package main
+import "fmt"
+
+func main(){
+    fmt.Println("Hello World!")
+}
+```
