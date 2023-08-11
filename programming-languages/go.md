@@ -10,3 +10,20 @@
 - Go has better Memory Mangement.
 - Go, in general, has only one way of getting a particular operation done - so, It’s easy to read other people’s code.
 - Go doesn’t have operator oveloading.
+
+# More … :
+
+- File names are in lower letters ( can have _ if it’s a multi word file name ) and file name extention is `.go`
+- The package to which the `.go` file belongs will be indicated on the *first* line.
+- Pacakge names are also in lower case.  For example: `package main`
+- A standalone executable belongs to main. Each Go application contains one main.
+- Packages and the files within them must be compiled in the correct order.
+- Factoring the keyword: calling a keyword once on multiple instances.
+    
+    ```go
+    import (
+      "fmt"
+      "log"
+      "strings"
+    )
+    ```
