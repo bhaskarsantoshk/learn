@@ -32,7 +32,7 @@
 - return types: `func funcName() (return_variable_1 type, return_var_2 type )`
 - `func main()` is the starting point.
 
-# Hello World:
+- **Hello World:**
 
 ```go
 package main
@@ -40,5 +40,40 @@ import "fmt"
 
 func main(){
     fmt.Println("Hello World!")
+}
+```
+
+- Primitive Data Types: int, float, bool, string
+- Composite Data Types: struct, array, map, slice, channel
+- to declare a variable : `var var1 type`
+- Functions with multiple return variables :
+
+```go
+func addAndSubtract(a int, b int) (int, int) {
+    
+    return a+b, a-b
+}
+```
+
+- User defined datatypes :
+
+```go
+
+type MyInteger int
+
+var i MyInteger = 1
+```
+
+- Type conversions must be done explicitly in Go:
+
+```go
+
+package main
+import "fmt"
+
+func main(){
+    var temperature float32 = 31.4        
+    fmt.Println(temperature)        
+    fmt.Println(int(temperature))
 }
 ```
